@@ -1,8 +1,18 @@
-public class QUES3 {
+
+import java.util.Scanner;
+
+public class QUESQUATR {
     public static void main(String[] args) {
-        double num1 = 10.00;
-        double num2 = 90.00;
-        double num3 = 90.00;
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Coloque seu nome: ");
+        String nome = myObj.nextLine();
+        System.out.println("O nome do usuário é: " + nome);
+        System.out.println("Sua primeira nota foi: ");
+        double num1 = myObj.nextInt();
+        System.out.println("Sua segunda nota foi: ");
+        double num2 = myObj.nextInt();
+        System.out.println("Sua terceira nota foi: ");
+        double num3 = myObj.nextInt();
         double media;
         media = (num1 + num2 + num3) / 3;
         if (media>=70){
